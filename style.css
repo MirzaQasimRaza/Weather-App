@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ADD8E6, #e3e1e1);
+}
+
+.card {
+    background: linear-gradient(134deg,rgb(15, 234, 234),rgba(252, 252, 252, 0.455));
+    border-radius: 16px;
+    min-height: 530px;
+    padding: 18px 20px;
+    box-shadow: 1px 1px 10px rgba(139, 138, 138, 0.75);
+}
+
+.searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.temperature {
+    font-family: "DynaPuff", system-ui;
+    font-size: 5rem;
+    color: white;
+}
+
+.city {
+    font-family: "DynaPuff", system-ui;
+    font-size: 3rem;
+    color: white;
+}
+
+#inputbar {
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#search {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    background: linear-gradient(134deg,rgba(94, 234, 234, 0.558),rgba(255, 254, 254, 0.996));
+    transition: opacity 0.3s ease-in;
+}
+
+#search:hover {
+    opacity: 0.6;
+}
+
+#search img {
+    height: 30px;
+}
+
+/* 1440px laptops */
+
+@media only screen and (max-width: 1440px){
+    .card {
+        max-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .card {
+        max-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card {
+        max-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    .card {
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .card {
+        min-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+    .card {
+        min-height: 550px;
+        /* margin-left: 30px; */
+        margin-top: 5px;
+        width: 280px;
+    }
+
+    #inputbar {
+        margin-left: 5px;
+    }
+
+    #search {
+        height: 40px;
+        min-width: 40px;
+        border-radius: 50%;
+    }
+
+    #search img {
+        height: 20px;
+    }
+}
